@@ -45,10 +45,28 @@
 	h2 {font-size: 3.4rem;}
 	h2:first-child {margin-top:0;}
 	p, li {font-size: 1.3rem;}
+	img {max-width: 100%; }
 	.en__component--row {padding:4rem 0;}
 	.en__component--row.en__component--advrow { justify-content: center;}
 	.en__component--row:not(.en__component--advrow) > .en__component { max-width: 1400px; margin-left:auto; margin-right: auto;}
-	.en__component--row-A1 { background: black; color: white; }
+	.en__component--row-A0 { padding: 20px 0; }
+	@media screen and (min-width: 1025px) {
+			.en__component--row-A0 button { 
+				display: none;
+		} 
+	}
+	.en__component--row-A0 img { width:300px; height: auto; }
+	.en__component--row-A0 > .en__component { display: flex; justify-content: space-between; align-items: center;}
+	.en__component--row-A0 ul { display: flex; justify-content: space-between; list-style: none; margin:0; padding: 0; }
+	.en__component--row-A0 li { margin:0; padding: 0; }
+	.en__component--row-A0 li a { display: block; text-decoration: none; padding: 10px 20px; color: #999999; font-weight: 700;letter-spacing: 1px;}
+	.en__component--row-A0 li:last-child a { background: #009EE2; color: white; }
+	.en__component--row-A0 li a:hover {color: #000;}
+	.en__component--row-A1 { background-image: url('images/Header_Gradient.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
+	.en__component--row-A1 > .en__component {display: flex; justify-content: space-between;}
+	.en__component--row-A1 > .en__component > .en__component:first-child { background-image: url('images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat;}
+	.en__component--row-A1 > .en__component > .en__component:nth-child(2) img { max-width:300px; display: block; transform: scaleX(-1);}
+	.en__component--row-A1 > .en__component > .en__component:last-child img { max-width:300px; min-width:300px;display: block; }
 	.en__component--row-A3 { background: black; color: white; }
 	.en__component--row-A3 h2 {color:  #009EE2;}
 	.en__component--row-A4 { background: #009EE2; color: white; }
@@ -58,6 +76,10 @@
 	.en__component--row-A5 .en__component--column:nth-child(3) h2 { padding-left:40px; background-image: url('images/A_Housing.svg'); background-repeat: no-repeat; }
 	.en__component--row-A6 { background: black;  background-image: url('images/Supporter.jpg'); background-size: 42% auto; background-repeat: no-repeat; background-position: left center; color: white; }
 	.en__component--row-A6 > .en__component--advcolumn:nth-child(1) { }
+	.en__component--row-A7 h2 { color:  #009EE2; }
+	.en__component--row-A7 ul { padding-left:0; }
+	.en__component--row-A7 li { background-image: url('images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; }
+	.en__component--row-A8 { background: #009EE2; color: white;}
 	.en__component--row-A9 { background: black; color: white; text-align: center; }
 	.en__component--row-A10 { text-align: center; }
 
@@ -82,44 +104,45 @@
 
 		<div class="en__component en__component--row en__component--advrow">
 		<div class="en__component en__component en__component--column en__component--advcolumn" style="">
-		<div class="en__component en__component--copyblock"
+		
+	<div class="en__component en__component--imageblock">
+		<img src="images/MNDS_logo_blue.svg" alt="MND logo">
+	</div>
 
-style="
+	<div class="en__component en__component--copyblock">
+		<nav>
+		<ul>
+			<li><a href="#">It's about time</a></li>
+			<li><a href="#">Storywall</a></li>
+			<li><a href="#">Pledge for MND</a></li>
+			<li><a href="#">Support advocacy</a></li>
+			<li><a href="#">Share your story</a></li>
+		</ul>
+	</nav>
 
-
-
-
-
-
-
-"
->
-	<p>LOGO AND NAV</p>
-
-	
+	<button>Menu</button>
 	
 </div>
 </div>
 </div>
 		<div class="en__component en__component--row en__component--row--1">
 		<div class="en__component en__component en__component--column en__component--column--1">
-		<div class="en__component en__component--copyblock"
+		<div class="en__component en__component--copyblock">
 
-style="
-
-
-
-
-
-
-
-"
->
-	<p>HERO IMAGE AND COUTDOWN</p>
+			<h1>The system can’t keep pace with MND</h1>
 
 	
-	
-</div>
+			<p>Time is running for change</p>
+
+			<p>Scottish Parliament Elections:</p>
+		</div>
+		<div class="en__component en__component--imageblock">
+			<img src="images/Wheelchair_header.png" alt="Person in a wheelchair">
+		</div>
+
+		<div class="en__component en__component--imageblock">
+			<img src="images/IAT_logo.svg" alt="MND logo">
+		</div>
 </div>
 </div>
 		<div class="en__component en__component--row en__component--row--1">
@@ -178,7 +201,9 @@ style="
 >
 	<p>People with MND are being forced to wait to receive the care and support they desperately need through local authorities.</p>
 
-<p>Too often, people are dying before statutory services are put in place. It&rsquo;s truly shocking. The challenge Scotland&rsquo;s care system faces is massive &ndash; but it&rsquo;s not insurmountable. The reality is, many of the issues people with MND face could be overcome if we simply had a system which recognised the speed at which MND can progress.</p>
+<p>Too often, people are dying before statutory services are put in place. It&rsquo;s truly shocking.</p>
+<p><strong><em> The challenge Scotland&rsquo;s care system faces is massive &ndash; but it&rsquo;s not insurmountable.</em></strong></p>
+<p> The reality is, many of the issues people with MND face could be overcome if we simply had a system which recognised the speed at which MND can progress.</p>
 
 	
 	
@@ -358,6 +383,14 @@ style="
 >
 	<p>Over the coming weeks, Scotland&rsquo;s political parties are seeking to develop their manifestos ahead of the 2021 Scottish Parliament Elections on the 6th May. Your story will appear on our campaign wall, which we&rsquo;ll be showing to key decision-makers.</p>
 
+	<p><strong>By sharing your story, you can help to:</strong></p>
+
+	<ul>
+		<li>Raise awareness of system failures</li>
+		<li>Help put MND on the political agenda</li>
+		<li>Increase the chance of effecting change</li>
+	</ul>
+
 	
 	
 </div>
@@ -384,7 +417,7 @@ style="
 </div>
 		<div class="en__component en__component--imageblock">
 	
-	
+			<img src="images/hourglass-manifesto.png" alt="hour glass">
 	
 </div>
 </div>
