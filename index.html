@@ -24,7 +24,28 @@
 <!-- Andrew begin-->
 
 <style>
-	body {margin:0; padding: 0;}
+	@font-face {
+	    font-family: 'urwdin-reg';
+	    src: url('fonts/URWDIN-Regular.woff2') format('woff2'),
+	         url('fonts/URWDIN-Regular.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'urwdin-bold';
+	    src: url('fonts/URWDINSemiCond-Bold.woff2') format('woff2'),
+	         url('fonts/URWDINSemiCond-Bold.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	body {font-family: 'urwdin-reg'; margin:0; padding: 0; line-height: 2;}
+	h1, h2, h3 {font-family: 'urwdin-bold';}
+	h2 {font-size: 3.4rem;}
+	h2:first-child {margin-top:0;}
+	p, li {font-size: 1.3rem;}
+	.en__component--row {padding:4rem 0;}
 	.en__component--row.en__component--advrow { justify-content: center;}
 	.en__component--row:not(.en__component--advrow) > .en__component { max-width: 1400px; margin-left:auto; margin-right: auto;}
 	.en__component--row-A1 { background: black; color: white; }
@@ -39,6 +60,8 @@
 	.en__component--row-A6 > .en__component--advcolumn:nth-child(1) { }
 	.en__component--row-A9 { background: black; color: white; text-align: center; }
 	.en__component--row-A10 { text-align: center; }
+
+	.cta-1 { background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
 	
 	
 </style>
@@ -270,9 +293,8 @@ style="
 		<div class="en__component en__component--row en__component--advrow">
 		<div class="en__component en__component en__component--column en__component--advcolumn" style="">
 		<div class="en__component en__component--imageblock">
-	
-	
-	
+
+
 </div>
 </div>
 		<div class="en__component en__component en__component--column en__component--advcolumn" style="">
@@ -290,9 +312,11 @@ style="
 >
 	<h2>Have you experienced delays receiving the help you need?</h2>
 
-<p>Share your story</p>
+	<p>If so, now is the time to speak up.</p>
 
-<p>If so, now is the time to speak up.</p>
+	<p><a href="#" class="cta-1">Share your story</a></p>
+
+
 
 	
 	
