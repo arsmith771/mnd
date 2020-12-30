@@ -51,8 +51,11 @@
 	p {margin:0 0 1.5em 0;}
 	ul {padding-left:0;}
 	img {max-width: 100%; }
+	.wrap { display: flex; max-width: 1400px; margin-right: auto; margin-left:auto; }
 	.en__component--row {padding:4rem 0;}
+	.en__component--row:first-of-type, .en__component--row:last-of-type {padding: 0;}
 	.en__component--row.en__component--advrow { justify-content: center;}
+	.en__component--row:first-of-type.en__component--advrow  {justify-content: space-between;}
 	.en__component--row:not(.en__component--advrow) > .en__component { max-width: 1400px; margin-left:auto; margin-right: auto;}
 	.en__component--row-A0 { padding: 20px 0; }
 	@media screen and (min-width: 1025px) {
@@ -96,6 +99,7 @@
 	.en__component--align-center {text-align: center;}
 	.en__component--hero-row { background-image: url('images/Header_Gradient.svg'); background-position: center 109%;background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
 	.en__component--hero-block {display: flex; justify-content: space-between;}
+	.en__component--column.en__component--advcolumn.en__component--header {flex:none;}
 	.en__component--hero-block > .en__component:first-child {width: 45%; background-image: url('images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat; padding-bottom: 311px;}
 	.en__component--hero-block > .en__component:first-child p:first-of-type {color: #009EE2; font-size: 2.5rem; font-weight: 700;}
 	.en__component--hero-block > .en__component:nth-child(2) {transform: scaleX(-1);}
@@ -103,11 +107,12 @@
 	.en__component--hero-block > .en__component:last-child {width: 15%;}
 	.en__component--list-with-tick-icon li { background-image: url('images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; }
 	.en__component--section-2-title {color:  #009EE2;}
-	.en__component--header { display: flex; justify-content: space-between; align-items: center;}
-	.en__component--header img { width:300px; height: auto; }
+	/*.en__component--header { display: flex; justify-content: space-between; align-items: center;}*/
+	.en__component--header img { width:300px; height: auto; position:relative; right: calc( ( (100vw - 1400px ) / 2) - 7%);}
+	.en__component--back-to-main-site { position:relative; right: calc( ( (100vw - 1400px ) / 2) - 7%); }
 	.en__component--header ul { display: flex; justify-content: space-between; list-style: none; margin:0; padding: 0; }
 	.en__component--header li { margin:0; padding: 0; }
-	.en__component--header li a { display: block; text-decoration: none; padding: 10px 20px; color: #999999; font-weight: 700;letter-spacing: 1px;}
+	.en__component--header li a { display: block; text-decoration: none; padding: 10px 20px; color: #999999; font-weight: 700;letter-spacing: 1px;  white-space: nowrap;}
 	.en__component--header li:last-child a { background: #009EE2; color: white; }
 	.en__component--header li a:hover {color: #000;}
 	.en__component--social-care h2 { padding-left:3.2em; background-image: url('images/S_Care.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
@@ -117,6 +122,7 @@
 	.en__component--cta-1 a { background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
 	.countdown {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; }
 	.countdown span {display: block; color: black; }
+	.img-style-1 { position: absolute; left:7%; bottom:20px; width: 300px;}
 	.a2a_kit {display: flex; justify-content: center;}   
 	.a2a_kit a { margin:0 15px; }
 	.a2a_kit a svg {background: #009EE2;}
@@ -139,7 +145,15 @@
 			<div class="en__component en__component--imageblock">
 				<img src="images/MNDS_logo_blue.svg" alt="MND logo">
 			</div>
+		</div>
 
+		<div class="en__component en__component en__component--column en__component--advcolumn en__component--header en__component--back-to-main-site" style="">
+			<div class="en__component en__component--copyblock">
+				<a href="#">Main site</a>
+			</div>
+		</div>
+
+		<div class="en__component en__component en__component--column en__component--advcolumn en__component--header" style="">
 			<div class="en__component en__component--copyblock">
 				<nav>
 					<ul>
@@ -297,8 +311,8 @@
 		</div>
 	</div>
 
-	<div class="en__component en__component--row en__component--row--2">
-		<div class="en__component en__component en__component--column en__component--column--1">
+	<div class="en__component en__component--row en__component--advrow">
+		<div class="en__component en__component--column en__component--advcolumn">
 			<div class="en__component en__component--copyblock blue-bg">
 				<h2>Our message to the next Scottish Government</h2>
 			</div>
@@ -309,7 +323,7 @@
 			</div>
 		</div>
 
-		<div class="en__component en__component en__component--column en__component--column--2">
+		<div class="en__component en__component--column en__component--advcolumn">
 			<div class="en__component en__component--copyblock">
 				<p>Right now, our Campaigns Team are meeting with researchers and candidates from all parties, laying bear the problems cause by the slow speed of the system.</p>
 
@@ -362,6 +376,19 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="en__component en__component--row en__component--advrow">
+		<div class="en__component en__component--column en__component--advcolumn">
+			<div class="en__component en__component--imageblock">
+				<img src="images/MNDS_logo_white.svg" class="">
+			</div>
+		</div>
+		<div class="en__component en__component--column en__component--advcolumn">
+			<div class="en__component en__component--copyblock blue-bg">
+				<p><a href="#">Main site</a></p>
+			</div>		
+		</div>
+	</div>
 </form>
 
 <!-- Andrew begin-->
@@ -385,7 +412,7 @@
 		rowBgColor('hero-bg', 'en__component--hero-row');
 
 		var row = $('.en__component--row'),
-			rowWithMultiCols = $('.en__component--advrow');
+			rowWithMultiCols = $('.en__component--advrow').not('.en__component--row:first-of-type.en__component--advrow');
 		
 		// Add iterated class name to each row
 		row.each(function(index){
@@ -404,7 +431,11 @@
 				colCount = cols.length,
 				colWidth = 1400 / colCount;
 
-			cols.css('max-width', colWidth + 'px');
+			//cols.css('max-width', colWidth + 'px');
+		});
+
+		$('.en__component--row').each(function(){
+			$(this).wrapInner('<div class="wrap" />');
 		});
 
 	});
