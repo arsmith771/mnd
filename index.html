@@ -18,118 +18,11 @@
 <meta property="og:url" content="https://action.mndscotland.org.uk/page/73380/action/1?mode=DEMO&amp;locale=en-GB"/>
 <link rel="image_src" href=""/>
 <link href='https://action.mndscotland.org.uk/ea-demo/frontend/pbAssets/build/css/enPage.css?v=3.60.1' rel='stylesheet' type='text/css' />
+<link href='css/style.css' rel='stylesheet' />
 <script>var pageJson = {"clientId":2256,"pageCount":2,"redirectPresent":false,"campaignPageId":73380,"campaignId":201754,"pageNumber":1};</script>
 <script src='https://action.mndscotland.org.uk/page/73380/pagedata.js?locale=en-GB&ea.profile.id=0'></script>
 <script src='https://action.mndscotland.org.uk/ea-demo/frontend/pbAssets/build/js/enPage.js?v=3.60.1'></script>
-<!-- Andrew begin-->
 
-<style>
-	@font-face {
-	    font-family: 'urwdin-reg';
-	    src: url('fonts/URWDIN-Regular.woff2') format('woff2'),
-	         url('fonts/URWDIN-Regular.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-
-	@font-face {
-	    font-family: 'urwdin-bold';
-	    src: url('fonts/URWDINSemiCond-Bold.woff2') format('woff2'),
-	         url('fonts/URWDINSemiCond-Bold.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-
-	html {box-sizing: border-box;}
-	*, :before, :after {box-sizing: inherit;}
-	body {font-family: 'urwdin-reg'; margin:0; padding: 0; line-height: 2;}
-	h1, h2, h3 {font-family: 'urwdin-bold';}
-	h1 {font-size: 4rem; line-height: 1.2; margin-top:110px; margin-bottom: 0.3em;}
-	h2 {font-size: 3.4rem; line-height: 1.2;}
-	h2:first-child {margin-top:0;}
-	p, li {font-size: 1.3rem;}
-	p {margin:0 0 1.5em 0;}
-	ul {padding-left:0;}
-	img {max-width: 100%; }
-	.wrap { display: flex; max-width: 1400px; margin-right: auto; margin-left:auto; }
-	.en__component--row {padding:4rem 0;}
-	.en__component--row:first-of-type, .en__component--row:last-of-type {padding: 0;}
-	.en__component--row.en__component--advrow { justify-content: center;}
-	.en__component--row:first-of-type.en__component--advrow  {justify-content: space-between;}
-	.en__component--row:not(.en__component--advrow) > .en__component { max-width: 1400px; margin-left:auto; margin-right: auto;}
-	.en__component--row-A0 { padding: 20px 0; }
-	@media screen and (min-width: 1025px) {
-			.en__component--row-A0 button { 
-				display: none;
-		} 
-	}
-
-	/*
-	.en__component--row-A0 img { width:300px; height: auto; }
-	.en__component--row-A0 > .en__component { display: flex; justify-content: space-between; align-items: center;}
-	.en__component--row-A0 ul { display: flex; justify-content: space-between; list-style: none; margin:0; padding: 0; }
-	.en__component--row-A0 li { margin:0; padding: 0; }
-	.en__component--row-A0 li a { display: block; text-decoration: none; padding: 10px 20px; color: #999999; font-weight: 700;letter-spacing: 1px;}
-	.en__component--row-A0 li:last-child a { background: #009EE2; color: white; }
-	.en__component--row-A0 li a:hover {color: #000;}
-	.en__component--row-A1 { background-image: url('images/Header_Gradient.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
-	.en__component--row-A1 > .en__component {display: flex; justify-content: space-between;}
-	.en__component--row-A1 > .en__component > .en__component:first-child { background-image: url('images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat;}
-	.en__component--row-A1 > .en__component > .en__component:nth-child(2) img { max-width:300px; display: block; transform: scaleX(-1);}
-	.en__component--row-A1 > .en__component > .en__component:last-child img { max-width:300px; min-width:300px;display: block; }
-	.en__component--row-A3 { background: black; color: white; }
-	.en__component--row-A3 h2 {color:  #009EE2;}
-	.en__component--row-A4 { background: #009EE2; color: white; }
-	.en__component--row-A5 { background: #009EE2; color: white;}
-	.en__component--row-A5 .en__component--column:nth-child(1) h2 { padding-left:40px; background-image: url('images/S_Care.svg'); background-repeat: no-repeat; }
-	.en__component--row-A5 .en__component--column:nth-child(2) h2 { padding-left:40px; background-image: url('images/H_Adaptations.svg'); background-repeat: no-repeat; }
-	.en__component--row-A5 .en__component--column:nth-child(3) h2 { padding-left:40px; background-image: url('images/A_Housing.svg'); background-repeat: no-repeat; }
-	.en__component--row-A6 { background: black;  background-image: url('images/Supporter.jpg'); background-size: 42% auto; background-repeat: no-repeat; background-position: left center; color: white; }
-	.en__component--row-A6 > .en__component--advcolumn:nth-child(1) { }
-	.en__component--row-A7 h2 { color:  #009EE2; }
-	.en__component--row-A7 ul { padding-left:0; }
-	.en__component--row-A7 li { background-image: url('images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; }
-	.en__component--row-A8 { background: #009EE2; color: white;}
-	.en__component--row-A9 { background: black; color: white; text-align: center; }
-	.en__component--row-A10 { text-align: center; }
-	*/
-
-	.en__component--black-row {background: black; color: white;}
-	.en__component--blue-row {background: #009EE2; color: white;}
-	.en__component--align-center {text-align: center;}
-	.en__component--hero-row { background-image: url('images/Header_Gradient.svg'); background-position: center 109%;background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
-	.en__component--hero-block {display: flex; justify-content: space-between;}
-	.en__component--column.en__component--advcolumn.en__component--header {flex:none;}
-	.en__component--hero-block > .en__component:first-child {width: 45%; background-image: url('images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat; padding-bottom: 311px;}
-	.en__component--hero-block > .en__component:first-child p:first-of-type {color: #009EE2; font-size: 2.5rem; font-weight: 700;}
-	.en__component--hero-block > .en__component:nth-child(2) {transform: scaleX(-1);}
-	.en__component--hero-block > .en__component:nth-child(2) img { max-width: 344px; margin-top: 180px;}
-	.en__component--hero-block > .en__component:last-child {width: 15%;}
-	.en__component--list-with-tick-icon li { background-image: url('images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; }
-	.en__component--section-2-title {color:  #009EE2;}
-	/*.en__component--header { display: flex; justify-content: space-between; align-items: center;}*/
-	.en__component--header img { width:300px; height: auto; position:relative; right: calc( ( (100vw - 1400px ) / 2) - 7%);}
-	.en__component--back-to-main-site { position:relative; right: calc( ( (100vw - 1400px ) / 2) - 7%); }
-	.en__component--header ul { display: flex; justify-content: space-between; list-style: none; margin:0; padding: 0; }
-	.en__component--header li { margin:0; padding: 0; }
-	.en__component--header li a { display: block; text-decoration: none; padding: 10px 20px; color: #999999; font-weight: 700;letter-spacing: 1px;  white-space: nowrap;}
-	.en__component--header li:last-child a { background: #009EE2; color: white; }
-	.en__component--header li a:hover {color: #000;}
-	.en__component--social-care h2 { padding-left:3.2em; background-image: url('images/S_Care.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
-	.en__component--home-adaptations h2 { padding-left:2.6em; background-image: url('images/H_Adaptations.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
-	.en__component--access-housing h2 { padding-left:2.8em; background-image: url('images/A_Housing.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
-
-	.en__component--cta-1 a { background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
-	.countdown {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; }
-	.countdown span {display: block; color: black; }
-	.img-style-1 { position: absolute; left:7%; bottom:20px; width: 300px;}
-	.a2a_kit {display: flex; justify-content: center;}   
-	.a2a_kit a { margin:0 15px; }
-	.a2a_kit a svg {background: #009EE2;}
-</style>
-
-
-<!-- Andrew end -->
 </head>
 <body>
 <form method="post" action="/page/73380/action/2" class="en__component en__component--page">
@@ -377,6 +270,7 @@
 		</div>
 	</div>
 
+	<!--
 	<div class="en__component en__component--row en__component--advrow">
 		<div class="en__component en__component--column en__component--advcolumn">
 			<div class="en__component en__component--imageblock">
@@ -389,90 +283,14 @@
 			</div>		
 		</div>
 	</div>
+	-->
 </form>
 
 <!-- Andrew begin-->
 
-<script>
 
-	function rowBgColor(cl1, cl2){
 
-		$('.en__component').each(function(){
-			if ( $(this).hasClass(cl1) ) {
-
-				$(this).closest('.en__component--row').addClass(cl2);
-			}
-		});
-	}
-
-	$(document).ready(function(){
-
-		rowBgColor('black-bg', 'en__component--black-row');
-		rowBgColor('blue-bg', 'en__component--blue-row');
-		rowBgColor('hero-bg', 'en__component--hero-row');
-
-		var row = $('.en__component--row'),
-			rowWithMultiCols = $('.en__component--advrow').not('.en__component--row:first-of-type.en__component--advrow');
-		
-		// Add iterated class name to each row
-		row.each(function(index){
-
-			var $this = $(this);
-
-			//$this.prepend( index );
-			// $this.addClass('en__component--row-A' + index);
-		});
-
-		// Set max-width for all columns
-		rowWithMultiCols.each(function(index){
-
-			var $this = $(this),
-				cols = $this.children('.en__component--advcolumn'),
-				colCount = cols.length,
-				colWidth = 1400 / colCount;
-
-			//cols.css('max-width', colWidth + 'px');
-		});
-
-		$('.en__component--row').each(function(){
-			$(this).wrapInner('<div class="wrap" />');
-		});
-
-	});
-	
-</script>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 6, 2021 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = "<div>" + days + "<span>days</span></div> <div>" + hours + "<span>hours</span></div> <div>" + minutes + "<span>minutes</span></div> <div>" + seconds + "<span>seconds</span></div>";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-<!-- Andrew end -->
+<script src="js/scripts.js"></script>
 </body>
 </html>
 <!-- Its about Time landing page:73380:201754:2256 -->
