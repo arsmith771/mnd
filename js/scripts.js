@@ -14,6 +14,7 @@
 		rowBgColor('blue-bg', 'en__component--blue-row');
 		rowBgColor('hero-bg', 'en__component--hero-row');
 		rowBgColor('hero-storywall-bg', 'en__component--hero-storywall-row');
+		rowBgColor('hero-advocacy-bg', 'en__component--hero-advocacy-row');
 
 		var row = $('.en__component--row'),
 			rowWithMultiCols = $('.en__component--advrow').not('.en__component--row:first-of-type.en__component--advrow');
@@ -51,6 +52,12 @@
 				$(this).addClass('en__component--storyblock-row');
 			}
 
+		});
+
+		$('.en__component--header button').on('click', function(event){
+
+			event.preventDefault();
+			$('.en__component--header nav').slideToggle();
 		});
 
 		
