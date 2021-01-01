@@ -42,6 +42,16 @@
 			$(this).wrapInner('<div class="wrap" />');
 		});
 
+		$('.en__component--advrow').each(function(){
+
+			var col = $(this).find('.en__component--advcolumn');
+
+			if ( col.hasClass('en__component--storyblock') ) {
+
+				$(this).addClass('en__component--storyblock-row');
+			}
+
+		});
 
 		
 		// Set the date we're counting down to

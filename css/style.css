@@ -24,8 +24,9 @@
 	p, li {font-size: 1.3rem;}
 	p {margin:0 0 1.5em 0;}
 	ul {padding-left:0;}
-	img {max-width: 100%; }
+	img {max-width: 100%; height: auto;}
 	.wrap { display: flex; width: 1400px; margin-right: auto; margin-left: auto; justify-content: space-between;}
+	@media (max-width: 1400px) { .wrap {width: 100%;} }
 	.en__component--row {padding:4rem 0;}
 	.en__component--row:first-of-type .wrap { align-items: center;}
 	.en__component--row:first-of-type {padding: 0;}
@@ -96,8 +97,12 @@
 	.en__component--header li a:hover {color: #000;}
 	@media (min-width: 1024px) { .en__component--header button {display: none; } }
 	
-
-
+	.en__component--storyblock-row {padding: 0;}
+	.en__component--storyblock { background-color: black; color: white; max-width: 424px;     margin-bottom: 62px;}
+	.en__component--storyblock img { display: block; }
+	.en__component--storyblock .en__component--copyblock { border-top: 6px solid #009EE2; padding:20px;}
+	.en__component--storyblock h2 {text-align: center; margin-bottom:0.2em;}
+	.en__component--storyblock p { margin-bottom:0;}
 	.en__component--social-care h2 { padding-left:3.2em; background-image: url('../images/S_Care.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
 	.en__component--home-adaptations h2 { padding-left:2.6em; background-image: url('../images/H_Adaptations.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
 	.en__component--access-housing h2 { padding-left:2.8em; background-image: url('../images/A_Housing.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
