@@ -71,11 +71,11 @@
 	.en__component--hero-storywall-row { background-image: url('../images/Lynda.jpg'); background-position: left center;background-repeat: no-repeat; background-size: 75% auto; background-color: black; color: white; }
 	.en__component--hero-advocacy-row { background-image: url('../images/Supporter.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 300px ) ) auto; background-color: black; color: white; }
 	@media (max-width: 1400px) { .en__component--hero-advocacy-row { background-size: calc( 100vw - 300px ) auto; } }
-	.en__component--hero-block,
+	.en__component--hero-block {display: flex; justify-content: space-between;}
 	.en__component--hero-storywall-block,
 	.en__component--hero-advocacy-block {display: flex; justify-content: space-between; align-items: flex-end;}
 	.en__component--column.en__component--advcolumn.en__component--header {flex:none;}
-	.en__component--hero-block > .en__component:first-child {width: 45%; background-image: url('../images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat; padding-bottom: 311px;}
+	.en__component--hero-block > .en__component:first-child {width: 45%; background-image: url('../images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat; padding-bottom: 215px;}
 	.en__component--hero-block > .en__component:first-child p:first-of-type {color: #009EE2; font-size: 2.5rem; font-weight: 700;}
 	.en__component--hero-block > .en__component:nth-child(2) {transform: scaleX(-1);}
 	.en__component--hero-block > .en__component:nth-child(2) img { max-width: 344px; margin-top: 180px;}
@@ -113,8 +113,8 @@
 	.en__component--access-housing h2 { padding-left:2.8em; background-image: url('../images/A_Housing.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
 
 	.en__component--cta-1 a { background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
-	.countdown {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; }
-	.countdown span {display: block; color: black; }
+	.en__component--countdown p:last-of-type {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; }
+	.en__component--countdown p:last-of-type span {display: block; color: black; }
 	.img-style-1 { position: absolute; left:7%; bottom:20px; width: 300px;}
 	.a2a_kit {display: flex; justify-content: center;}   
 	.a2a_kit a { margin:0 15px; }
