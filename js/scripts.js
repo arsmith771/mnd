@@ -15,6 +15,7 @@
 		rowBgColor('hero-bg', 'en__component--hero-row');
 		rowBgColor('hero-storywall-bg', 'en__component--hero-storywall-row');
 		rowBgColor('hero-advocacy-bg', 'en__component--hero-advocacy-row');
+		rowBgColor('row-no-bottom-padding', 'en__component--row-1');
 
 		var row = $('.en__component--row'),
 			rowWithMultiCols = $('.en__component--advrow').not('.en__component--row:first-of-type.en__component--advrow');

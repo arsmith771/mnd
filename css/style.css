@@ -24,11 +24,12 @@
 	p, li {font-size: 1.4rem;}
 	p {margin:0 0 1.5em 0; line-height: 1.7;}
 	ul {padding-left:0;}
+	ol {margin-top:0; margin-bottom: 2rem;}
 	img {max-width: 100%; height: auto; display: block; }
 	nav p, nav li {font-size: 1rem;}
 	.wrap { display: flex; width: 1400px; margin-right: auto; margin-left: auto; justify-content: space-between;}
 	@media (max-width: 1400px) { .wrap {width: 100%;} }
-	.en__component--row {padding:4rem 0;}
+	.en__component--row {padding:6rem 0;}
 	.en__component--row:first-of-type, .en__component--row:last-of-type {padding: 18px 0;}
 	.en__component--row:last-of-type .wrap {width:100%;}
 	.en__component--row:first-of-type .wrap { align-items: center;}
@@ -36,11 +37,17 @@
 	.en__component--row:first-of-type.en__component--advrow  {justify-content: space-between;}
 	.en__component--row:not(.en__component--advrow) > .en__component { max-width: 1400px; margin-left:auto; margin-right: auto;}
 	.en__component--column.en__component--advcolumn.two-thirds-col {min-width: 66.66%;}
+	.en__component--row-1 {padding-bottom: 0;}
 	.two-thirds-col p {max-width: 640px;}
 	.large-heading h1, .large-heading h2, .large-heading h3{ font-size: 4rem; } /* 65 */
-	.medium-heading h1, .medium-heading h2, .medium-heading h3{ font-size: 3rem; } /* 38 */
+	.medium-heading h1, .medium-heading h2, .medium-heading h3{ font-size: 2.3rem; } /* 38 */
 	.small-heading h1, .small-heading h2, .small-heading h3{ font-size: 1.8rem; } /* 28 */
 	.hour-glass-graphic {background-image: url('../images/hour-glass-04.svg'); background-position: left bottom; background-repeat: no-repeat; padding-bottom: 24%; background-size: auto 36%;}
+	.caption-1 p {padding: 20px 40px 20px 3vw; background-color:black; border-right: 10px solid #009EE2; display: inline-block; width: auto; color:#999; margin:0 0 -2rem 0; font-size: 0.9rem;}
+	.caption-1 p em {color: white; display: block; font-weight: 600;}
+	.alert-box-1 ol + p {font-size: 0.9rem; background-color:black; background-image: url('../images/alert-icon.svg'); background-position: 2.2rem 50%; background-size: auto 35%; background-repeat: no-repeat; color: white; padding: 1.5rem 1.5rem 2rem 7rem; position: relative;     max-width: 530px;}
+	.alert-box-1 ol + p:after {content:''; width:3rem; height:3rem; display:block; transform: rotate(45deg); background-color:#009EE2; color: white; position: absolute;     right: -1.5rem; bottom: -1.5rem;}
+	.ordered-list-1 ol li {font-weight: 700;}
 
 	/*
 	.en__component--row-A0 img { width:300px; height: auto; }
@@ -76,8 +83,8 @@
 	.en__component--blue-row {background: #009EE2; color: white;}
 	.en__component--align-center {text-align: center;}
 	.en__component--hero-row { background-image: url('../images/Header_Gradient.svg'); background-position: center 109%;background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
-	.en__component--hero-storywall-row { background-image: url('../images/Lynda.jpg'); background-position: left center;background-repeat: no-repeat; background-size: 75% auto; background-color: black; color: white; }
-	.en__component--hero-advocacy-row { background-image: url('../images/Supporter.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 300px ) ) auto; background-color: black; color: white; }
+	.en__component--hero-storywall-row { background-image: url('../images/Lynda.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 230px ) ) auto; background-color: black; color: white; }
+	.en__component--hero-advocacy-row { background-image: url('../images/Supporter.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 230px ) ) auto; background-color: black; color: white; }
 	@media (max-width: 1400px) { .en__component--hero-advocacy-row { background-size: calc( 100vw - 300px ) auto; } }
 	.en__component--hero-block {display: flex; justify-content: space-between;}
 	.en__component--hero-storywall-block,
@@ -93,7 +100,7 @@
 	.en__component--hero-advocacy-block > .en__component:last-child {width: 154px;}
 	/*.en__component--hero-advocacy-block .en__component--imageblock {margin-right: calc((100vw - 1400px ) / 2);}*/
 	.en__component--list-with-tick-icon li { background-image: url('../images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; } 
-	.blue-text{color:  #009EE2;}
+	.blue-header h2, .blue-header h3, .blue-header h4 {color:  #009EE2;}
 	.en__component--header { position: static;}
 	.en__component--header div { position: static;}
 	.en__component--header .en__component--imageblock img,
@@ -103,8 +110,8 @@
 	.en__component--row:last-of-type .en__component--imageblock {margin-left: 3%;}
 	.en__component--row:last-of-type .en__component--imageblock a {text-decoration: none;  display: flex;  align-items: center; height: auto; position:relative; color: white;}
 	@media (max-width: 1400px) { .en__component--header .en__component--imageblock a { right: auto;} }
-	.en__component--header .en__component--imageblock a:after { content: 'Main site'; font-weight: 600; color: #999; margin-left:30px;}
-	.en__component--row:last-of-type .en__component--imageblock a:after { content: 'Main site'; font-weight: 600; color: white; margin-left:30px;}
+	.en__component--header .en__component--imageblock a:after { content: 'Main site'; font-weight: 600; color: #999; margin-left:30px; margin-left: 20px; padding-left: 24px;line-height: 1.2;  background-image: url('../images/chev-l-gray.svg'); background-repeat: no-repeat; }
+	.en__component--row:last-of-type .en__component--imageblock a:after { content: 'Main site';  background-image: url('../images/chev-l.svg'); background-repeat: no-repeat; font-weight: 600; color: white; margin-left: 20px; padding-left: 24px;line-height: 1.2;}
 	/*.en__component--back-to-main-site { position:relative; right: calc( ( (100vw - 1400px ) / 2) - 7%); }*/
 	@media (max-width: 1400px) { .en__component--back-to-main-site  { right: auto;} }
 	.en__component--header nav { display: none; } 
@@ -129,7 +136,7 @@
 	.en__component--access-housing h2 { padding-left:2.8em; background-image: url('../images/A_Housing.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
 	.en__component--social-care, .en__component--home-adaptations, .en__component--access-housing {padding-right: 24%;}
 	.en__component--social-care p, .en__component--home-adaptations p, .en__component--access-housing p {font-size:1.2rem;}
-	.en__component--cta-1 a { background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
+	.cta-1 a { font-size: 1.8rem; background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
 	.en__component--countdown p:last-of-type {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; }
 	.en__component--countdown p:last-of-type span {display: block; color: black; }
 	.img-style-1 { position: absolute; left:7%; bottom:20px; width: 300px;}
