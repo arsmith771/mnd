@@ -29,7 +29,8 @@
 	.wrap { display: flex; width: 1400px; margin-right: auto; margin-left: auto; justify-content: space-between;}
 	@media (max-width: 1400px) { .wrap {width: 100%;} }
 	.en__component--row {padding:4rem 0;}
-	.en__component--row:first-of-type {padding: 18px 0;}
+	.en__component--row:first-of-type, .en__component--row:last-of-type {padding: 18px 0;}
+	.en__component--row:last-of-type .wrap {width:100%;}
 	.en__component--row:first-of-type .wrap { align-items: center;}
 	.en__component--row.en__component--advrow { justify-content: center;}
 	.en__component--row:first-of-type.en__component--advrow  {justify-content: space-between;}
@@ -95,11 +96,15 @@
 	.blue-text{color:  #009EE2;}
 	.en__component--header { position: static;}
 	.en__component--header div { position: static;}
-	.en__component--header .en__component--imageblock img { width: 140px; }
+	.en__component--header .en__component--imageblock img,
+	.en__component--row:last-of-type .en__component--imageblock img{ width: 140px; }
 	
-	.en__component--header .en__component--imageblock a {text-decoration: none; width: 265px; display: flex;  align-items: center; height: auto; position:relative; right: calc( ( (100vw - 1400px ) / 2) - 30%);}
+	.en__component--header .en__component--imageblock a {text-decoration: none;  display: flex;  align-items: center; height: auto; position:relative; right: calc( ( (100vw - 1400px ) / 2) - 30%);}
+	.en__component--row:last-of-type .en__component--imageblock {margin-left: 3%;}
+	.en__component--row:last-of-type .en__component--imageblock a {text-decoration: none;  display: flex;  align-items: center; height: auto; position:relative; color: white;}
 	@media (max-width: 1400px) { .en__component--header .en__component--imageblock a { right: auto;} }
-	.en__component--header .en__component--imageblock a:after{ content: 'Main site'; font-weight: 600; color: #999;}
+	.en__component--header .en__component--imageblock a:after { content: 'Main site'; font-weight: 600; color: #999; margin-left:30px;}
+	.en__component--row:last-of-type .en__component--imageblock a:after { content: 'Main site'; font-weight: 600; color: white; margin-left:30px;}
 	/*.en__component--back-to-main-site { position:relative; right: calc( ( (100vw - 1400px ) / 2) - 7%); }*/
 	@media (max-width: 1400px) { .en__component--back-to-main-site  { right: auto;} }
 	.en__component--header nav { display: none; } 
