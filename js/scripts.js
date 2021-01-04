@@ -60,6 +60,36 @@
 			$('.en__component--header nav').slideToggle();
 		});
 
+		function bgReplaceImg(){
+
+			var image = $('.image-as-bg-1');
+
+			image.each(function(){
+
+				/*
+				var imgSrc = $(this).attr('src'),
+					parentRow = $(this).closest('.en__component--row')
+								.css('background-image', 'url(' + imgSrc + ')')
+								.css('background-repeat', 'no-repeat')
+								.css('background-size', 'calc( ( (100% - 1400px) / 2) + (1400px / 3) ) auto');
+
+				$(this).remove();
+				*/
+				var imgSrc = $(this).attr('src');
+				
+				$(this).closest('.en__component--row').css('padding','0');
+				$(this).closest('.wrap').css('width','100%');
+				$(this).closest('.en__component--advcolumn')
+						.css('max-width','calc( ( (100% - 1400px) / 2) + (1400px / 3) )')
+						.css('background-image', 'url(' + imgSrc + ')')
+						.css('background-size', 'cover');
+				$(this).closest('.en__component--advcolumn').next('.en__component--advcolumn').css('padding','4rem');
+				$(this).remove();
+			});
+		}
+
+		bgReplaceImg();
+
 		
 		// Set the date we're counting down to
 		var countDownDate = new Date("May 6, 2021 00:00:00").getTime();
