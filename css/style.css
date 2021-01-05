@@ -50,8 +50,8 @@
 	.small-heading h1, .small-heading h2, .small-heading h3{ font-size: 2.8rem; } /* 28 */
 	.hour-glass-graphic {background-image: url('../images/hour-glass-04.svg'); background-position: left bottom; background-repeat: no-repeat; padding-bottom: 24%; background-size: auto 36%;}
 	.caption-1 p {padding: 20px 40px 20px 3vw; background-color:black; border-right: 10px solid #009EE2; display: inline-block; width: auto; color:#999; margin:0 0 -2rem 0; font-size: 0.9rem;}
-	@media (max-width: 700px) {
-		.caption-1 p { margin:0;}
+	@media (max-width: 1312px) {
+		.caption-1 p { margin:0; padding: 10px 10px 10px 7%; width: 100%;}
 	}
 	.caption-1 p em {color: white; display: block; font-weight: 600;}
 	.alert-box-1 ol + p {font-size: 0.9rem; background-color:black; background-image: url('../images/alert-icon.svg'); background-position: 2.2rem 50%; background-size: auto 35%; background-repeat: no-repeat; color: white; padding: 1.5rem 1.5rem 2rem 7rem; position: relative;   margin-bottom: 3rem;  max-width: 530px; overflow: hidden;}
@@ -60,7 +60,9 @@
 	.large-text p {font-size: 1.8rem; font-weight: 600; color:black; line-height:1.4;}
 	.blue-col {background: #009EE2; color: white;     max-width: 50%;
     padding: 4rem 5rem;}
-
+    @media (max-width: 700px) {
+    	.blue-col { max-width: none;}
+    }
 	.en__component--black-row {background: black; color: white;}
 	.en__component--blue-row {background: #009EE2; color: white;}
 	.en__component--align-center {text-align: center;}
@@ -71,9 +73,9 @@
 	}
 	.en__component--hero-storywall-row { background-image: url('../images/Lynda.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 230px ) ) auto; background-color: black; color: white; }
 	@media (max-width: 700px) {
-		.en__component--hero-storywall-row {background-size: cover;}
+		
 	}
-	.en__component--hero-advocacy-row { background-image: url('../images/Supporter.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 230px ) ) auto; background-color: black; color: white; }
+	.en__component--hero-advocacy-row { background-image: url('../images/Supporter.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 276px ) ) auto; background-color: black; color: white; }
 	@media (max-width: 1400px) { 
 		.en__component--hero-advocacy-row { background-size: calc( 100vw - 300px ) auto; } 
 	}
@@ -96,9 +98,10 @@
 		.en__component--hero-storywall-block,
 		.en__component--hero-advocacy-block {    flex-direction: column-reverse;}
 
+
 	}
 	@media (max-width: 700px) { 
-		.en__component--hero-advocacy-block {  background-image: url('../images/Supporter-mobile.jpg'); background-position: left center; background-repeat: no-repeat; background-size:60% auto;}
+		.en__component--column.en__component--advcolumn.en__component--hero-advocacy-block {  background-image: url('../images/Supporter-mobile.jpg'); background-position: left center; background-repeat: no-repeat; background-size:60% auto; width: 100%;}
 	}
 
 	.en__component--column.en__component--advcolumn.en__component--header {flex:none;}
@@ -122,13 +125,27 @@
 	.en__component--hero-advocacy-block > .en__component:last-child {width: 154px;}
 	@media (max-width: 1023px) {
 		.en__component--hero-block > .en__component:last-child,
-	.en__component--hero-storywall-block > .en__component:last-child {width: 50%;}
-		.en__component--hero-storywall-block > .en__component:last-child {width: auto;}
+		.en__component--hero-storywall-block > .en__component:last-child {width: 50%;}
+		
 		
 		.en__component--hero-block > .en__component:last-child img {max-width: 80%;    margin-left: 20%;}
 	}
 	@media (max-width: 700px) {
 		.en__component--hero-advocacy-block > .en__component:last-child {width: 30%;}
+	}
+	@media (max-width: 1312px) {
+		.hero-storywall-bg {position: absolute;
+		    left: 0;
+		    bottom: -3.5rem;
+		    width: 100%;
+		}
+
+		.en__component--hero-storywall-block > .en__component:last-child {width: 20%; background: black;
+    padding: 10px; position: absolute;
+    right: 0;
+    top: 20px;}
+		.en__component--hero-storywall-row {background-size: cover; position: relative; min-height: 56vw; margin-bottom: 4rem;}
+
 	}
 	/*.en__component--hero-advocacy-block .en__component--imageblock {margin-right: calc((100vw - 1400px ) / 2);}*/
 	.en__component--list-with-tick-icon li { background-image: url('../images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat;     background-size: 1.7em 1.7em; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; } 
