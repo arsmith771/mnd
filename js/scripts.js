@@ -58,16 +58,31 @@
 
 			image.each(function(){
 
-				var imgSrc = $(this).attr('src');
+				var $this = $(this),
+					imgSrc = $this.attr('src');
 				
-				$(this).closest('.en__component--row').css('padding','0');
-				$(this).closest('.wrap').css('width','100%');
-				$(this).closest('.en__component--advcolumn')
+				$this.closest('.en__component--row').css('padding','0');
+				$this.closest('.wrap').css('width','100%').css('padding','0');
+				$this.closest('.en__component--advcolumn')
 						.css('max-width','calc( ( (100% - 1400px) / 2) + (1400px / 3) )')
 						.css('background-image', 'url(' + imgSrc + ')')
-						.css('background-size', 'cover');
-				$(this).closest('.en__component--advcolumn').next('.en__component--advcolumn').css('padding','4rem');
-				$(this).remove();
+						.css('background-size', 'cover')
+						.css('background-position', 'center center');
+				$this.closest('.en__component--advcolumn').next('.en__component--advcolumn').css('padding','4rem');
+
+				if (window.innerWidth < 1000) { 
+					$this.closest('.en__component--row').css('padding','0');
+					$this.closest('.wrap').css('width','100%').css('padding','0');
+					$this.closest('.en__component--advcolumn')
+							.css('max-width','none')
+							.css('background-image', 'url(' + imgSrc + ')')
+							.css('background-size', 'cover')
+							.css('background-position', 'center center');
+					$this.closest('.en__component--advcolumn').next('.en__component--advcolumn').css('padding','4rem');
+					
+				}	
+
+				$this.remove();
 			});
 		}
 
