@@ -18,7 +18,7 @@
 	*, :before, :after {box-sizing: inherit;}
 	body {font-family: 'urwdin-reg'; margin:0; padding: 0; line-height: 2;}
 	h1, h2, h3 {font-family: 'urwdin-bold';}
-	h1 {font-size: 3rem; line-height: 1.2; margin-top:110px; margin-bottom: 0.3em;}
+	h1 {font-size: 4rem; line-height: 1.2; margin-bottom: 0.3em;}
 	h2 {font-size: 4rem; line-height: 1.2;}
 	h2:first-child {margin-top:0;}
 	p, li {font-size: 1.4rem;}
@@ -45,44 +45,18 @@
 	.hour-glass-graphic {background-image: url('../images/hour-glass-04.svg'); background-position: left bottom; background-repeat: no-repeat; padding-bottom: 24%; background-size: auto 36%;}
 	.caption-1 p {padding: 20px 40px 20px 3vw; background-color:black; border-right: 10px solid #009EE2; display: inline-block; width: auto; color:#999; margin:0 0 -2rem 0; font-size: 0.9rem;}
 	.caption-1 p em {color: white; display: block; font-weight: 600;}
-	.alert-box-1 ol + p {font-size: 0.9rem; background-color:black; background-image: url('../images/alert-icon.svg'); background-position: 2.2rem 50%; background-size: auto 35%; background-repeat: no-repeat; color: white; padding: 1.5rem 1.5rem 2rem 7rem; position: relative;     max-width: 530px;}
+	.alert-box-1 ol + p {font-size: 0.9rem; background-color:black; background-image: url('../images/alert-icon.svg'); background-position: 2.2rem 50%; background-size: auto 35%; background-repeat: no-repeat; color: white; padding: 1.5rem 1.5rem 2rem 7rem; position: relative;   margin-bottom: 3rem;  max-width: 530px;}
 	.alert-box-1 ol + p:after {content:''; width:3rem; height:3rem; display:block; transform: rotate(45deg); background-color:#009EE2; color: white; position: absolute;     right: -1.5rem; bottom: -1.5rem;}
 	.ordered-list-1 ol li {font-weight: 700;}
-
-	/*
-	.en__component--row-A0 img { width:300px; height: auto; }
-	.en__component--row-A0 > .en__component { display: flex; justify-content: space-between; align-items: center;}
-	.en__component--row-A0 ul { display: flex; justify-content: space-between; list-style: none; margin:0; padding: 0; }
-	.en__component--row-A0 li { margin:0; padding: 0; }
-	.en__component--row-A0 li a { display: block; text-decoration: none; padding: 10px 20px; color: #999999; font-weight: 700;letter-spacing: 1px;}
-	.en__component--row-A0 li:last-child a { background: #009EE2; color: white; }
-	.en__component--row-A0 li a:hover {color: #000;}
-	.en__component--row-A1 { background-image: url('../images/Header_Gradient.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
-	.en__component--row-A1 > .en__component {display: flex; justify-content: space-between;}
-	.en__component--row-A1 > .en__component > .en__component:first-child { background-image: url('../images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat;}
-	.en__component--row-A1 > .en__component > .en__component:nth-child(2) img { max-width:300px; display: block; transform: scaleX(-1);}
-	.en__component--row-A1 > .en__component > .en__component:last-child img { max-width:300px; min-width:300px;display: block; }
-	.en__component--row-A3 { background: black; color: white; }
-	.en__component--row-A3 h2 {color:  #009EE2;}
-	.en__component--row-A4 { background: #009EE2; color: white; }
-	.en__component--row-A5 { background: #009EE2; color: white;}
-	.en__component--row-A5 .en__component--column:nth-child(1) h2 { padding-left:40px; background-image: url('../images/S_Care.svg'); background-repeat: no-repeat; }
-	.en__component--row-A5 .en__component--column:nth-child(2) h2 { padding-left:40px; background-image: url('../images/H_Adaptations.svg'); background-repeat: no-repeat; }
-	.en__component--row-A5 .en__component--column:nth-child(3) h2 { padding-left:40px; background-image: url('../images/A_Housing.svg'); background-repeat: no-repeat; }
-	.en__component--row-A6 { background: black;  background-image: url('../images/Supporter.jpg'); background-size: 42% auto; background-repeat: no-repeat; background-position: left center; color: white; }
-	.en__component--row-A6 > .en__component--advcolumn:nth-child(1) { }
-	.en__component--row-A7 h2 { color:  #009EE2; }
-	.en__component--row-A7 ul { padding-left:0; }
-	.en__component--row-A7 li { background-image: url('../images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; }
-	.en__component--row-A8 { background: #009EE2; color: white;}
-	.en__component--row-A9 { background: black; color: white; text-align: center; }
-	.en__component--row-A10 { text-align: center; }
-	*/
+	.large-text p {font-size: 1.8rem; font-weight: 600; color:black; line-height:1.4;}
+	.blue-col {background: #009EE2; color: white;     max-width: 50%;
+    padding: 4rem 5rem;}
 
 	.en__component--black-row {background: black; color: white;}
 	.en__component--blue-row {background: #009EE2; color: white;}
 	.en__component--align-center {text-align: center;}
-	.en__component--hero-row { background-image: url('../images/Header_Gradient.svg'); background-position: center 109%;background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white; }
+	.en__component--hero-row { background-image: url('../images/Header_Gradient.svg'); background-position: center 109%;background-repeat: repeat-x; background-size: auto auto; background-color: black; color: white;     padding: 4rem 0;}
+	.en__component--hero-row h1 { margin-top:90px;}
 	.en__component--hero-storywall-row { background-image: url('../images/Lynda.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 230px ) ) auto; background-color: black; color: white; }
 	.en__component--hero-advocacy-row { background-image: url('../images/Supporter.jpg'); background-position: left center;background-repeat: no-repeat; background-size: calc( ( (100vw - 1400px) / 2) + (1400px - 230px ) ) auto; background-color: black; color: white; }
 	@media (max-width: 1400px) { .en__component--hero-advocacy-row { background-size: calc( 100vw - 300px ) auto; } }
@@ -91,9 +65,10 @@
 	.en__component--hero-advocacy-block {display: flex; justify-content: space-between; align-items: flex-end;}
 	.en__component--column.en__component--advcolumn.en__component--header {flex:none;}
 	.en__component--hero-block > .en__component:first-child {width: 45%; background-image: url('../images/Clock_Hands.svg'); background-position: left bottom; background-size: contain; background-repeat:no-repeat; padding-bottom: 215px;}
-	.en__component--hero-block > .en__component:first-child p:first-of-type {color: #009EE2; font-size: 2.5rem; font-weight: 700;}
+	.en__component--hero-block > .en__component:first-child p:first-of-type {color: #009EE2; font-size: 2rem; font-weight: 700;}
+	.en__component--hero-block > .en__component:first-child p:nth-of-type(2) {margin-bottom:1rem; font-weight: 700;}
 	.en__component--hero-block > .en__component:nth-child(2) {transform: scaleX(-1);}
-	.en__component--hero-block > .en__component:nth-child(2) img { max-width: 344px; margin-top: 180px;}
+	.en__component--hero-block > .en__component:nth-child(2) img { max-width: 344px; margin-top: 140px;}
 	.en__component--hero-block > .en__component:last-child,
 	.en__component--hero-storywall-block > .en__component:last-child {width: 154px;}
 	.en__component--hero-storywall-block .en__component--imageblock {margin-right: calc((100vw - 1400px ) / 2);}
@@ -136,9 +111,12 @@
 	.en__component--access-housing h2 { padding-left:2.8em; background-image: url('../images/A_Housing.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;}
 	.en__component--social-care, .en__component--home-adaptations, .en__component--access-housing {padding-right: 24%;}
 	.en__component--social-care p, .en__component--home-adaptations p, .en__component--access-housing p {font-size:1.2rem;}
-	.cta-1 a { font-size: 1.8rem; background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 20px; font-weight: 600;}
-	.en__component--countdown p:last-of-type {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; }
-	.en__component--countdown p:last-of-type span {display: block; color: black; }
+	.cta-1 a { font-size: 1.6rem; background: #009EE2; color: white; text-decoration: none; display: inline-block; padding: 10px 30px; font-weight: 700;}
+	.cta-2 a {font-size: 1.6rem; background: white; color: #009EE2; text-decoration: none; display: inline-block; padding: 10px 30px; font-weight: 700;}
+	.en__component--countdown p:last-of-type {display: flex;  text-align: center; color:  #009EE2; background: white; font-weight: 700; padding:10px;     justify-content: space-between; max-width: 520px;     line-height: 1.3;}
+	.en__component--countdown p:last-of-type div {font-size: 2rem; width:25%;  border-right: 1px solid #aaa; padding: 5px 0;}
+	.en__component--countdown p:last-of-type div:last-child {border-right:0;}
+	.en__component--countdown p:last-of-type span {display: block; color: black; font-size: 0.9rem}
 	.img-style-1 { position: absolute; left:7%; bottom:20px; width: 300px;}
 	.a2a_kit {display: flex; justify-content: center;}   
 	.a2a_kit a { margin:0 15px; }

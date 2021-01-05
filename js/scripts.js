@@ -20,14 +20,6 @@
 		var row = $('.en__component--row'),
 			rowWithMultiCols = $('.en__component--advrow').not('.en__component--row:first-of-type.en__component--advrow');
 		
-		// Add iterated class name to each row
-		row.each(function(index){
-
-			var $this = $(this);
-
-			//$this.prepend( index );
-			// $this.addClass('en__component--row-A' + index);
-		});
 
 		// Set max-width for all columns
 		rowWithMultiCols.each(function(index){
@@ -37,7 +29,6 @@
 				colCount = cols.length,
 				colWidth = 1400 / colCount;
 
-			//cols.css('max-width', colWidth + 'px');
 		});
 
 		$('.en__component--row').not('.en__component--hero-storywall-row').each(function(){
@@ -67,15 +58,6 @@
 
 			image.each(function(){
 
-				/*
-				var imgSrc = $(this).attr('src'),
-					parentRow = $(this).closest('.en__component--row')
-								.css('background-image', 'url(' + imgSrc + ')')
-								.css('background-repeat', 'no-repeat')
-								.css('background-size', 'calc( ( (100% - 1400px) / 2) + (1400px / 3) ) auto');
-
-				$(this).remove();
-				*/
 				var imgSrc = $(this).attr('src');
 				
 				$(this).closest('.en__component--row').css('padding','0');
