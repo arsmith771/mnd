@@ -52,7 +52,14 @@
 	.large-heading h1, .large-heading h2, .large-heading h3{ font-size: 4rem; } /* 65 */
 	.medium-heading h1, .medium-heading h2, .medium-heading h3{ font-size: 2.3rem; } /* 38 */
 	.small-heading h1, .small-heading h2, .small-heading h3{ font-size: 2.8rem; } /* 28 */
-	.hour-glass-graphic {background-image: url('../images/hour-glass-04.svg'); background-position: left bottom; background-repeat: no-repeat; padding-bottom: 24%; background-size: auto 36%;}
+	.hour-glass-graphic h2 {background-image: url('../images/hour-glass-04.svg'); background-position: left bottom; background-repeat: no-repeat; padding-bottom: 60%; background-size: auto 36%;}
+	@media (max-width: 700px) {
+	.hour-glass-graphic h2 {     background-position: left center;
+    padding-bottom: 0;
+    padding-left: 2.2em;
+    background-size: auto 83%;}
+
+	}
 	.caption-1 p {padding: 20px 40px 20px 3vw; background-color:black; border-right: 10px solid #009EE2; display: inline-block; width: auto; color:#999; margin:0 0 -2rem 0; font-size: 0.9rem;}
 	@media (max-width: 1312px) {
 		.caption-1 p { margin:0; padding: 10px 10px 10px 7%; width: 100%;}
