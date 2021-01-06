@@ -158,6 +158,10 @@
 		.en__component--hero-storywall-row {background-size: cover; position: relative; min-height: 56vw; margin-bottom: 4rem;}
 
 	}
+	.block-1 {    padding: 1rem 0 0 3rem;}
+	@media (max-width: 700px) {
+		.block-1 {padding:0;}
+	}
 	/*.en__component--hero-advocacy-block .en__component--imageblock {margin-right: calc((100vw - 1400px ) / 2);}*/
 	.en__component--list-with-tick-icon li { background-image: url('../images/Black_Tick_Blue_Circle.svg');background-repeat: no-repeat;     background-size: 1.7em 1.7em; list-style: none; padding: 0 0 0 3.2rem;  margin: 0 0 1.2rem 0; } 
 	.blue-header h2, .blue-header h3, .blue-header h4 {color:  #009EE2;}
