@@ -207,9 +207,9 @@
 	.en__component--social-care h2 { padding-left:3.2em; background-image: url('../images/S_Care.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;     font-size: 2rem;}
 	.en__component--home-adaptations h2 { padding-left:2.6em; background-image: url('../images/H_Adaptations.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;    font-size: 2rem;}
 	.en__component--access-housing h2 { padding-left:2.8em; background-image: url('../images/A_Housing.svg'); background-repeat: no-repeat; line-height:1.1;    font-style: italic;    font-size: 2rem;}
-	.en__component--social-care, .en__component--home-adaptations, .en__component--access-housing {padding-right: 24%;}
+	.en__component--column.en__component--social-care, .en__component--column.en__component--home-adaptations, .en__component--column.en__component--access-housing {max-width: 29%;}
 	@media (max-width: 700px) {
-		.en__component--social-care, .en__component--home-adaptations, .en__component--access-housing {padding-right: 0;}
+		.en__component--column.en__component--social-care, .en__component--column.en__component--home-adaptations, .en__component--column.en__component--access-housing {max-width: none;}
 		.en__component--home-adaptations h2, .en__component--social-care h2, .en__component--access-housing h2 { padding-left: 2.1em;}
 		.en__component--list-with-tick-icon li { padding: .2rem 0px .2rem 3rem;}
 		.alert-box-1 ol + p { font-size: 1rem; }
