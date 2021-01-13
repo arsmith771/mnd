@@ -245,3 +245,8 @@
 		.en__component--header ul { margin: 2em 0px 1em 0px;}
 		.en__component--header ul li:last-child { margin: 1em 0 0 0; }
 	}
+	@media (max-width: 700px) {
+		.logo-header {height: 200px;}
+
+		.en__component--hero-advocacy-row > .wrap {display:block;}
+	}
