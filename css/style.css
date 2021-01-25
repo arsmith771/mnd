@@ -250,3 +250,4 @@
 
 		.en__component--hero-advocacy-row > .wrap {display:block;}
 	}
+	.en__component.en__component--hero-advocacy-block {justify-content: flex-end;}

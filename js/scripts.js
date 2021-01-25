@@ -8,6 +8,42 @@
 		});
 	}
 
+	function bgReplaceImg2(){
+
+			var image = $('.hero-bg'),
+				winW = window.innerWidth;
+
+			//console.log(winW);
+
+			image.each(function(){
+
+				var $this = $(this),
+					imgSrc = $this.attr('src'),
+					xVal = ( ( (winW - 1400) / 2) + 1100 );
+
+				console.log(xVal);
+				
+				$this.closest('.en__component--row')
+					.css('background-image', 'url(' + imgSrc + ')')
+					.css('background-size', xVal + 'px auto')
+					.css('background-repeat', 'no-repeat')
+					.css('background-position', 'left center')
+					.css('background-color','black');
+
+				if (winW < 1400) { 
+					$this.closest('.en__component--row')
+					.css('background-image', 'url(' + imgSrc + ')')
+					.css('background-size', '70% auto')
+					.css('background-repeat', 'no-repeat')
+					.css('background-position', 'left center')
+					.css('background-color','black');
+				}	
+
+				$this.closest('.en__component--advcolumn').remove();
+			});
+
+		}
+
 	$(document).ready(function(){
 
 		rowBgColor('black-bg', 'en__component--black-row');
@@ -88,6 +124,8 @@
 
 		bgReplaceImg();
 
+		bgReplaceImg2();
+
 		
 		// Set the date we're counting down to
 		var countDownDate = new Date("May 6, 2021 00:00:00").getTime();
@@ -120,6 +158,12 @@
 			}, 1000);
 		}
 
+	});
+
+
+	$(window).on('resize', function(){
+
+		bgReplaceImg2();
 	});
 	
 
